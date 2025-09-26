@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
     <title>Document</title>
-
+    <!-- css connection -->
+    <link rel="stylesheet" href="css/styles.css">
     <!-- font family-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,27 +16,88 @@
 </head>
 
 <body>
-    <!-- header section -->
+    <!-- nav section -->
     <header>
         <nav>
-            <div>
-                <h3 class="nav-title">Asista<span style="color:#FF7057;">Ai</span></h3>
-            </div>
-            <!-- navigation links -->
-            <ul>
+            <h3 class="nav-title">Asista<span class="highlight">Ai</span></h3>
+
+            <ul class="nav-links">
                 <li><a href="">Home</a></li>
                 <li><a href="">Features</a></li>
                 <li><a href="">How It Works</a></li>
                 <li><a href="">Pricing</a></li>
                 <li><a href="">Contact</a></li>
-                </div>
             </ul>
-            <!-- nav button -->
-            <div>
-                <button class="nav-btm">Free Trial</button>
-            </div>
+            <button class="nav-btn">Free Trial</button>
         </nav>
+        <!-- menu taggle for mobile -->
+        <div class="menu-toggle">&#9776;</div>
     </header>
+
+    <!-- banner Section -->
+    <section class="banner">
+        <div class="banner-overlay"></div>
+
+        <img src="assets/images/shape-left.png" alt="image" class="shape-left">
+        <img src="assets/images/shape-right.png" alt="image" class="shape-right">
+
+        <div class="banner-content">
+            <h1>Make Complex Projects <br> Transparent Using AI</h1>
+            <p>
+                Plan smarter, track progress, and deliver projects on time with the power of <br> AI. Simplify workflows
+                and boost team productivity effortlessly.
+            </p>
+            <div class="banner-btn">
+                <a href="#" class="btn-primary">Start Free Trial</a>
+                <a href="#" class="btn-outline">Explore Features</a>
+            </div>
+        </div>
+
+        <!-- dashboard image -->
+        <div class="banner-image">
+            <img src="assets/images/dashboard.png" alt="Dashboard">
+        </div>
+    </section>
+
+    <!-- animation icons -->
+    <section class="trusted">
+        <!-- row 1 -->
+        <div class="logos left">
+            <div class="logos-slide">
+                <img src="assets/images/sendbox.png" alt="Sendbox">
+                <img src="assets/images/Microsoftt.png" alt="Microsoft">
+                <img src="assets/images/meta.png" alt="Meta">
+                <img src="assets/images/sendbox.png" alt="Sendbox">
+                <img src="assets/images/meta.png" alt="Meta">
+            </div>
+            <div class="logos-slide">
+                <img src="assets/images/sendbox.png" alt="Sendbox">
+                <img src="assets/images/Microsoftt.png" alt="Microsoft">
+                <img src="assets/images/meta.png" alt="Meta">
+                <img src="assets/images/sendbox.png" alt="Sendbox">
+            </div>
+        </div>
+
+        <!-- row 2 -->
+        <div class="logos right">
+            <div class="logos-slide">
+                <img src="assets/images/sendbox.png" alt="Sendbox">
+                <img src="assets/images/meta.png" alt="Meta">
+                <img src="assets/images/Microsoftt.png" alt="Microsoft">
+                <img src="assets/images/meta.png" alt="Meta">
+                <img src="assets/images/sendbox.png" alt="Sendbox">
+            </div>
+            <div class="logos-slide">
+                <img src="assets/images/meta.png" alt="Meta">
+                <img src="assets/images/Microsoftt.png" alt="Microsoft">
+                <img src="assets/images/sendbox.png" alt="Sendbox">
+                <img src="assets/images/Microsoftt.png" alt="Microsoft">
+            </div>
+        </div>
+    </section>
+
+    <!-- js connect -->
+    <script src="js/script.js"></script>
 </body>
 
 </html>
