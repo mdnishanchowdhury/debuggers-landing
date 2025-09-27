@@ -42,3 +42,29 @@ document.querySelectorAll(".badge").forEach(badge => {
         badge.style.transform = "rotateX(0deg) rotateY(0deg) scale(1)";
     });
 });
+
+// 
+// Scroll Animation for feature cards
+const cards = document.querySelectorAll(".feature-card");
+let lastScrollY = window.scrollY;
+
+window.addEventListener("scroll", () => {
+    const scrollY = window.scrollY;
+
+    const scrollDirection = scrollY > lastScrollY ? "down" : "up";
+    lastScrollY = scrollY;
+
+    cards.forEach((card, index) => {
+        let move;
+
+        if (scrollDirection === "down") {
+            move = (scrollY * 0.01);
+        } else {
+            move = -(scrollY * 0.01);
+        }
+
+        card.style.transform = `translateX(${move}px)`;
+    });
+});
+
+
