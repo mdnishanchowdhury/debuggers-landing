@@ -91,7 +91,7 @@ setInterval(() => {
 }, 3000);
 
 
-// 
+// started 
 const startedLeft = document.querySelector(".started-left");
 const startedRight = document.querySelector(".started-right");
 
