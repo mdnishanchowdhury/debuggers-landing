@@ -68,3 +68,17 @@ window.addEventListener("scroll", () => {
 });
 
 
+// Animate cards on scroll
+// const cardswhy = document.querySelectorAll('.card');
+
+// const observer = new IntersectionObserver((entries) => {
+//   entries.forEach((entry, index) => {
+//     if (entry.isIntersecting) {
+//       setTimeout(() => {
+//         entry.target.classList.add('show');
+//       }, index * 300); // প্রতিটা কার্ড 0.3s করে দেরিতে আসবে
+//     }
+//   });
+// }, { threshold: 0.2 });
+
+// cardswhy.forEach(card => observer.observe(card));
