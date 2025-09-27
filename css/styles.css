@@ -77,9 +77,8 @@ nav {
     color: #fff;
 }
 
-/* nav-end */
 
-/* banner start */
+/* banner */
 .banner {
     min-height: 100vh;
     background: url("../assets/images/banner.png") no-repeat center center/cover;
@@ -169,7 +168,7 @@ nav {
     color: #000;
 }
 
-/* Hero Dashboard Image */
+/* banner dashboard lmage */
 .banner-image {
     position: relative;
     margin-top: 60px;
@@ -310,26 +309,118 @@ section.trusted {
     }
 }
 
-/* Responsive */
-@media (max-width: 900px) {
-    .logos-slide {
-        gap: 50px;
-    }
+/*AI solutions  */
 
-    .logos img {
-        height: 42px;
-    }
+.ai-solutions {
+    padding: 260px 60px 120px 160px;
 }
 
-@media (max-width: 480px) {
-    .logos-slide {
-        gap: 32px;
-    }
-
-    .logos img {
-        height: 34px;
-    }
+.ai-solutions h1 {
+    color: #FFF;
+    font-family: "Space Grotesk";
+    font-size: 56px;
+    font-weight: 300;
 }
+
+/* layout */
+.solutions {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* gap: 90px; */
+    padding-top: 90px;
+}
+
+/* left side */
+.img-man1 {
+    position: relative;
+}
+
+.img-man1 img {
+    width: 480px;
+    height: 620px;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+/* badges */
+.badge {
+    position: absolute;
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    border-radius: 24px;
+    border: 1px solid #FFF;
+    background: rgba(0, 0, 0, 0.20);
+    box-shadow: 5px 10px 20px 0 rgba(0, 19, 97, 0.15);
+    backdrop-filter: blur(10px);
+}
+
+.badge strong {
+    display: block;
+    color: #FFF;
+    font-family: "Space Grotesk";
+    font-size: 34px;
+    font-weight: 300;
+}
+
+.badge-revenue {
+    bottom: 98px;
+    left: -80px;
+}
+
+.badge-profit {
+    top: 102px;
+    right: -70px;
+    text-align: center;
+}
+
+.badge-profit strong {
+    color: #ff755a;
+    font-family: "Space Grotesk";
+    font-size: 34px;
+    font-weight: 500;
+}
+
+/* features */
+.solutions-features {
+    margin-top: 40px;
+    padding-left: 20px;
+}
+
+.solutions-features li {
+    color: #EBEBEB;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* right side */
+.solutions-right {
+    flex: 1;
+    max-width: 579px;
+    padding-top: 152px;
+}
+
+.solutions-right p {
+    color: #EBEBEB;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.img-man2 {
+    padding-top: 60px;
+}
+
+.img-man2 img {
+     width: 579px;
+    height: 420px;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+
 
 /* mobile version */
 @media (max-width: 768px) {
@@ -363,4 +454,5 @@ section.trusted {
     .menu-toggle {
         display: block;
     }
+    
 }

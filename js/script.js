@@ -27,3 +27,18 @@ document.addEventListener("mousemove", (event) => {
     }
 });
 
+// Badges
+document.querySelectorAll(".badge").forEach(badge => {
+    document.addEventListener("mousemove", (e) => {
+        const { innerWidth, innerHeight } = window;
+        const x = (e.clientX / innerWidth - 0.5) * 2;
+        const y = (e.clientY / innerHeight - 0.5) * 2;
+        const rotateX = y * 20; 
+        const rotateY = x * 20; 
+        badge.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.05)`;
+    });
+
+    document.addEventListener("mouseleave", () => {
+        badge.style.transform = "rotateX(0deg) rotateY(0deg) scale(1)";
+    });
+});
