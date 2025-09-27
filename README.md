@@ -6,7 +6,7 @@ Deployed on Vercel
 ---
 
 ##  Live Demo
-[[View Live Project](https://your-vercel-link.vercel.app](https://debuggers-landing.vercel.app/))
+[[View Live Project](https://debuggers-landing.vercel.app/))
 
 
 ## Features
@@ -18,4 +18,5 @@ Deployed on Vercel
 - Clean, maintainable code structure
 
 ---
+
 
