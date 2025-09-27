@@ -1312,6 +1312,7 @@ section.trusted {
     .teams {
         flex-direction: column;
         padding-top: 0;
+        padding:20px;
     }
 
     .teams-left {
