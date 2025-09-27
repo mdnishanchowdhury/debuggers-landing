@@ -908,6 +908,51 @@ section.trusted {
     font-weight: 400;
 }
 
+/* started */
+
+.hero-section {
+    height: 100vh;
+    background: linear-gradient(to bottom, #090E24, #6C1BAA);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    position: relative;
+    padding: 20px;
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    color: #c7c7d4;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+.btn {
+    background-color: #ff7547;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e76339;
+}
 
 
 /* footer */
