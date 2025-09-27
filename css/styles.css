@@ -984,9 +984,134 @@ section.trusted {
 
 
 /* footer */
-footer {
-    margin-top: 60px;
+.footer {
+    background-color: #1e0a2a;
+    color: #e4e2ee;
+    padding: 60px 60px 30px 60px;
+    font-size: 0.95rem;
 }
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.footer-about {
+    flex: 1 1 250px;
+}
+
+.footer-about h2 {
+    color: #FFF;
+    font-family: Tomorrow;
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.footer-about .highlight {
+    color: #FF7057;
+    font-family: Tomorrow;
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.footer-about p {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 12px 0 20px
+}
+
+.footer-about h4 {
+    margin-bottom: 10px;
+    color: #FFF;
+    font-family: Geist;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.social-icons img:hover {
+    opacity: 1;
+}
+
+.footer-links {
+    flex: 1 1 160px;
+}
+
+.footer-links h4,
+.footer-contact h4 {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    color: #bfbfd2;
+}
+
+.footer-links li {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.footer-links li:hover {
+    color: #ffffff;
+}
+
+.footer-contact {
+    flex: 1 1 180px;
+}
+
+.footer-contact p {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 16px;
+
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #3c2b4a;
+    margin-top: 40px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 0.85rem;
+    color:  #FFF;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.footer-bottom a {
+    color:  #FFF;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    margin: 0 6px;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
 
 /* mobile version */
 @media (max-width: 768px) {
