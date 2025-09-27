@@ -9,7 +9,7 @@ Deployed on Vercel
 [[View Live Project](https://your-vercel-link.vercel.app](https://debuggers-landing.vercel.app/))
 
 
-## 📌 Features
+## Features
 - Responsive design (mobile version)
 - Sticky header with navigation
 - Animated hero section (scroll reveal & floating effect)
@@ -18,3 +18,4 @@ Deployed on Vercel
 - Clean, maintainable code structure
 
 ---
+
