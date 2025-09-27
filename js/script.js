@@ -67,3 +67,32 @@ window.addEventListener("scroll", () => {
     });
 });
 
+// users
+const userCards = document.querySelectorAll(".users-card");
+const container = document.querySelector(".users-container");
+let current = 0;
+
+function showCard(index) {
+  // সব card থেকে active সরাও
+  userCards.forEach(card => card.classList.remove("active"));
+
+  // current card active করো
+  const activeCard = userCards[index];
+  activeCard.classList.add("active");
+
+  // active card কে viewport এর center এ আনো
+  const cardWidth = activeCard.offsetWidth + 30; // width + gap
+  const windowWidth = window.innerWidth;
+  const offset = index * cardWidth - (windowWidth / 2 - cardWidth / 2);
+
+  container.style.transform = `translateX(-${offset}px)`;
+}
+
+// প্রথম card দেখাও
+showCard(current);
+
+// Auto slide
+setInterval(() => {
+  current = (current + 1) % userCards.length;
+  showCard(current);
+}, 3000);
