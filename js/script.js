@@ -89,3 +89,16 @@ setInterval(() => {
   current = (current + 1) % userCards.length;
   showCard(current);
 }, 3000);
+
+
+// 
+const startedLeft = document.querySelector(".started-left");
+const startedRight = document.querySelector(".started-right");
+
+document.addEventListener("mousemove", (e) => {
+  let x = (e.clientX / window.innerWidth - 0.5) * 40; 
+  let y = (e.clientY / window.innerHeight - 0.5) * 40;
+
+  startedLeft.style.transform = `translate(${x}px, ${y}px)`;
+  startedRight.style.transform = `translate(${-x}px, ${-y}px)`; 
+});
