@@ -5,7 +5,7 @@
 }
 
 body {
-    background: #0b0018;
+    background: black;
     color: #fff;
     font-family: "Inter", sans-serif;
 }
@@ -310,9 +310,37 @@ section.trusted {
 }
 
 /*AI solutions  */
-
 .ai-solutions {
     padding: 260px 60px 120px 160px;
+    position: relative;
+    background: black;
+    overflow: hidden;
+}
+
+.ai-section-color {
+    width: 447px;
+    height: 447px;
+    position: absolute;
+    left: -286px;
+    top: 619px;
+    border-radius: 447px;
+    background: rgba(255, 112, 87, 0.30);
+    filter: blur(150px);
+    z-index: 2;
+    transition: transform 0.2s ease-out;
+}
+
+.ai-section-color2 {
+    width: 515px;
+    height: 515px;
+    position: absolute;
+    right: -370px;
+    bottom: -372px;
+    border-radius: 515px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(74, 52, 153, 0.50) 0%, rgba(145, 15, 159, 0.50) 100%);
+    filter: blur(150px);
+    z-index: 2;
+    transition: transform 0.2s ease-out;
 }
 
 .ai-solutions h1 {
@@ -422,7 +450,7 @@ section.trusted {
 
 /* feature */
 .features-section {
-    background: #0d0d15;
+    background: black;
     color: #f5f5f7;
     margin: auto;
     padding-bottom: 120px;
@@ -529,10 +557,24 @@ section.trusted {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    /* max-width: 1200px; */
     margin: 0 auto;
     padding: 0 60px 150px 60px;
     gap: 60px;
+    background: black;
+
+}
+
+.teams-color {
+    width: 469px;
+    height: 469px;
+    position: absolute;
+    left: -735px;
+    bottom: 45px;
+    border-radius: 469px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(74, 52, 153, 0.50) 0%, rgba(145, 15, 159, 0.50) 100%);
+    filter: blur(150px);
+    z-index: 2;
+    transition: transform 0.2s ease-out;
 }
 
 .teams-left {
@@ -623,10 +665,12 @@ section.trusted {
     text-decoration: none;
 }
 
-/* ==== Pricing Plans ==== */
-
+/* pricing plans */
 .container {
     padding: 0 60px 0 60px;
+    background: black;
+    position: relative;
+    overflow: hidden;
 }
 
 .container h1 {
@@ -636,6 +680,19 @@ section.trusted {
     font-size: 56px;
     font-weight: 300;
     padding-bottom: 60px;
+}
+
+.container-color {
+    width: 447px;
+    height: 447px;
+    position: absolute;
+    left: -250px;
+    bottom: -81px;
+    border-radius: 447px;
+    background: rgba(255, 112, 87, 0.30);
+    filter: blur(150px);
+    z-index: 2;
+    transition: transform 0.2s ease-out;
 }
 
 .plans {
@@ -654,7 +711,6 @@ section.trusted {
     flex: 1 0 0;
     border-radius: 16px;
     height: 560px;
-
     align-items: center;
 }
 
@@ -755,6 +811,22 @@ section.trusted {
     max-width: 1100px;
     margin: 0 auto;
     padding: 90px 20px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.how-it-works-color {
+    width: 573px;
+    height: 573px;
+    position: absolute;
+    right: -318px;
+    top: 600px;
+    border-radius: 573px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(74, 52, 153, 0.50) 0%, rgba(145, 15, 159, 0.50) 100%);
+    filter: blur(150px);
+    z-index: 2;
+    transition: transform 0.2s ease-out;
 }
 
 .video-header {
@@ -855,7 +927,7 @@ section.trusted {
 
 .users-card {
     flex: 0 0 683px;
-    background: #1c1222;
+    background: black;
     padding: 60px 40px;
     border-radius: 12px;
     opacity: 0.3;
@@ -1277,9 +1349,11 @@ section.trusted {
     .solutions-right p {
         font-size: 15px;
     }
-.solutions{
-    gap: 0;
-}
+
+    .solutions {
+        gap: 0;
+    }
+
     /* features */
     .features-header {
         padding: 10px 10px;
@@ -1303,7 +1377,8 @@ section.trusted {
     .feature-card {
         flex: 0 0 280px;
     }
-    .features-section{
+
+    .features-section {
         padding-bottom: 0;
         padding-bottom: 0;
     }
@@ -1312,7 +1387,7 @@ section.trusted {
     .teams {
         flex-direction: column;
         padding-top: 0;
-        padding:20px;
+        padding: 20px;
     }
 
     .teams-left {
@@ -1375,13 +1450,15 @@ section.trusted {
     }
 
     /* users */
-.users{
-    padding-top: 0;
-    padding-bottom: 25px;
-}
-    .users-container{
+    .users {
+        padding-top: 0;
+        padding-bottom: 25px;
+    }
+
+    .users-container {
         margin: 60px;
     }
+
     .users h2 {
         font-size: 32px;
     }
@@ -1400,9 +1477,10 @@ section.trusted {
     }
 
     /* started */
-    .started-sectio{
+    .started-sectio {
         padding-top: 0;
     }
+
     .started-content h1 {
         font-size: 32px;
     }
